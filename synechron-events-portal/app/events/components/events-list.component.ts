@@ -21,8 +21,13 @@ export class EventsListComponent implements OnInit {
 
     selectedEvent: SepEvent;
 
+    
     ngOnInit():void{
-        this.events = this._eventsService.getAllEvents();
+        this._eventsService.getAllEvents().subscribe(
+            data=>this.events=data,
+            error=>console.log(error),
+            ()=>console.log("Service call complete!!"),
+        )
     }
     onEventSelection(event : SepEvent):void{
         this.selectedEvent = event;
