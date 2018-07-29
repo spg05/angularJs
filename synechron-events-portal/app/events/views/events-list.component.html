@@ -29,7 +29,8 @@
             <td><span [innerText]="event.eventName | uppercase"></span></td>
             <td><span [innerText]="event.startDate | date:'MM/dd/yyyy'"></span></td>
             <td><span [innerText]="event.fees | currency:'INR'"></span></td>
-            <td><Button class="btn btn-success" (click)="onEventSelection(event)">Show Details</Button></td>
+            <!--<td><Button class="btn btn-success" (click)="onEventSelection(event)">Show Details</Button></td> -->
+            <td><Button class="btn btn-success"  routerLink="/events/{{event.eventId}}">Show Details</Button></td>
         </tr>
     </tbody>
 </table>
@@ -42,9 +43,9 @@
 
 </div -->
 
-<div *ngIf="selectedEvent"> 
+<!-- <div *ngIf="selectedEvent"> 
 
     <event-details [receivedEventId]="selectedEvent.eventId" (onConfirmation)="onChildConfirmation($event)">
     </event-details>
 
-</div>
+</div> -->

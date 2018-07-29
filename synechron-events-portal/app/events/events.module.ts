@@ -11,13 +11,15 @@ import { FirstLetterCapitalPipe } from './pipes/first-letter-capital.pipe';
 import { FilterByPipe } from './pipes/filter-by.pipe';
 
 import { SepEventsService } from './services/sep-events.service';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
-        HttpClientModule
+        HttpClientModule,
+        RouterModule
     ],
     exports: [EventsListComponent],
     declarations: [

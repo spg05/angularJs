@@ -15,17 +15,20 @@ export class SepEventsService{
         return this._http.get<SepEvent[]>("http://localhost:9090/api/events");
         //return this.eventsData;
     }
-    getSingleEvent(id: number): SepEvent{
-        let evnt : SepEvent = new SepEvent();
-        for( const event of this.eventsData){
-            if(event.eventId == id){
-                evnt=event;
-            }
-        }
+    // getSingleEvent(id: number): SepEvent{
+    //     let evnt : SepEvent = new SepEvent();
+    //     for( const event of this.eventsData){
+    //         if(event.eventId == id){
+    //             evnt=event;
+    //         }
+    //     }
 
-        return evnt;
+    //     return evnt;
+    // }
+
+    getSingleEvent(id: number): Observable<SepEvent>{
+        return this._http.get<SepEvent>("http://localhost:9090/api/events/"+id);
     }
-
     private eventsData:SepEvent[] = [
 
         {
