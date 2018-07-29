@@ -26,6 +26,7 @@ export class EventsDetailsComponent implements OnInit {
         this._route.params.subscribe((params)=>
             this.eventId=params["id"]
     );
+    
     this._eventsService.getSingleEvent(this.eventId).subscribe(
         data=>this.event=data,
         error=>console.log(error),
