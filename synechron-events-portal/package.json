@@ -41,7 +41,7 @@
     "to-string-loader": "^1.1.5",
     "typescript": "^2.9.2",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4",
+    "webpack-dev-server": "^3.1.11",
     "webpack-merge": "^4.1.1"
   }
 }
