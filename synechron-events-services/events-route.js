@@ -1,6 +1,7 @@
 
 https://sso.capgemini.com/opensso/XUI/?realm=/Capgemini&forward=true&spEntityID=f4b13b73-7725-4154-99ea-cb9d6a4855e0&goto=/SSORedirect/metaAlias/Capgemini/idpassignmentPro?ReqID%3DI0_rhtUY7L1yncaqDlAR2GNTTrtTOSeDB2LOIgAiirdoR_tanS1Snltpf8Li-F%26index%3Dnull%26acsURL%3D%26spEntityID%3Df4b13b73-7725-4154-99ea-cb9d6a4855e0%26binding%3D&AMAuthCookie=#login/
 
+https://capgemini.assignmentpro.com/Security/Login/SignInPingOneSSO.aspx?tokenid=I049hTwr-tGI3_gfRI2cZAhbYxzdoscE70ZiYxhbLuobmw2DPIX_YW3WXUbbGM&agentid=36df70cb
 
 const express = require('express');
 const eventRoutes = express.Router();
